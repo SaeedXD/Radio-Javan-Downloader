@@ -31,7 +31,6 @@ function radioJavan($url)
 	preg_match('/<meta name="csrf-token" content="(.+)"/U', $result_0, $m);
 	$csrf = $m[1];
 
-
 	$result_1 = xCurl([
 		CURLOPT_URL => 'https://www.radiojavan.com/mp3s/mp3_host',
 		CURLOPT_RETURNTRANSFER => true,
