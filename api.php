@@ -14,8 +14,8 @@ function radioJavan($url)
 		CURLOPT_FOLLOWLOCATION => true,
 		CURLOPT_SSL_VERIFYHOST => false,
 		CURLOPT_SSL_VERIFYPEER => false,
-		CURLOPT_COOKIEJAR	  => 'RadioJavanCookie.txt',
-		CURLOPT_HTTPHEADER	 => [
+		CURLOPT_COOKIEJAR      => 'RadioJavanCookie.txt',
+		CURLOPT_HTTPHEADER     => [
 			'accept: application/json, text/plain, */*',
 			'Accept-Language: en-US,en;q=0.5',
 			'x-application-type: WebClient',
@@ -35,12 +35,12 @@ function radioJavan($url)
 	$result_1 = xCurl([
 		CURLOPT_URL => 'https://www.radiojavan.com/mp3s/mp3_host',
 		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_POST		   => true,
-		CURLOPT_POSTFIELDS	 => "id=" . $id,
-		CURLOPT_ENCODING	   => 'gzip, deflate',
-		CURLOPT_COOKIEFILE	 => 'RadioJavanCookie.txt',
-		CURLOPT_COOKIEJAR	  => 'RadioJavanCookie.txt',
-		CURLOPT_HTTPHEADER	 => [
+		CURLOPT_POST           => true,
+		CURLOPT_POSTFIELDS     => "id=" . $id,
+		CURLOPT_ENCODING       => 'gzip, deflate',
+		CURLOPT_COOKIEFILE     => 'RadioJavanCookie.txt',
+		CURLOPT_COOKIEJAR      => 'RadioJavanCookie.txt',
+		CURLOPT_HTTPHEADER     => [
 			'Authority: www.radiojavan.com',
 			'Accept: application/json, text/javascript, */*; q=0.01',
 			'Accept-Language: en-US,en;q=0.9',
@@ -60,11 +60,11 @@ function radioJavan($url)
 	$result_2 = xCurl([
 		CURLOPT_URL => 'https://www.radiojavan.com/mp3s/mp3/' . $id . '?setup=1',
 		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_POST		   => true,
-		CURLOPT_ENCODING	   => 'gzip, deflate',
-		CURLOPT_COOKIEFILE	 => 'RadioJavanCookie.txt',
-		CURLOPT_COOKIEJAR	  => 'RadioJavanCookie.txt',
-		CURLOPT_HTTPHEADER	 => [
+		CURLOPT_POST           => true,
+		CURLOPT_ENCODING       => 'gzip, deflate',
+		CURLOPT_COOKIEFILE     => 'RadioJavanCookie.txt',
+		CURLOPT_COOKIEJAR      => 'RadioJavanCookie.txt',
+		CURLOPT_HTTPHEADER     => [
 			'Authority: www.radiojavan.com',
 			'Accept: application/json, text/javascript, */*; q=0.01',
 			'Accept-Language: en-US,en;q=0.9',
