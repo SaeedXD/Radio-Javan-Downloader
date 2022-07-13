@@ -20,8 +20,8 @@ function radioJavan($url)
 			'Accept-Language: en-US,en;q=0.5',
 			'x-application-type: WebClient',
 			'x-client-version: 2.10.4',
-			'Origin: https://www.googe.com',
-			'user-agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0',
+			'Origin: https://www.google.com',
+			'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36',
 		]
 	]);
 	
