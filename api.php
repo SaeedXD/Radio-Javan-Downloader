@@ -1,10 +1,15 @@
 <?php
 
 if(isset($_GET['url']))
-  $result = radioJavan($_GET['url']); // array
+{
+ 	$result = radioJavan($_GET['url']); // array
 	echo json_encode($result, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE);
+}
 else
+{
 	echo 'Enter URL.';
+}
+
 
 function radioJavan($url)
 {
